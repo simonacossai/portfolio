@@ -1,0 +1,28 @@
+.pc-work{
+    width:350px;
+    position: absolute;
+    bottom: 0;
+}
+
+.portfolio-col{
+    position: relative;
+
+}
+html{
+    background-color: #040E4A!important;
+}
+.App{
+    background-color: #040E4A!important;
+}
+.portfolio-container{
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.6);
+    position: relative;
+    border-left: 8px solid #B32F64;
+}
+
+.geometric-line{
+    background-color: #fff;
+    height:2px;
+    width:230px;
+
+}

@@ -1,0 +1,44 @@
+.about-container{
+	padding:40px;
+	background:#fff;
+}
+.about-img{
+    height: 550px;
+    width: 550px;
+}
+.about-text{
+	padding: 20px 20px;
+	width: fit-content;
+}
+button {
+	background: none;
+	border: 2px solid #0B30A2;
+	font: inherit;
+	line-height: 1;
+	padding: 0.7em 0.8em;
+	color: #0B30A2;
+	font-weight: 500;
+	width: 120px;
+	transition:ease-in-out .30s;
+  }
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.3em #0B30A2;
+  transform: translateY(-0.25em);
+  transition:ease-in-out .30s;
+
+}
+
+
+@media(max-width:768px){
+	.about-img{
+		height: 350px;
+		width: 350px;
+	}
+}
+@media(max-width:400px){
+	.about-img{
+		height: 250px;
+		width: 250px;
+	}
+}

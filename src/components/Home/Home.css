@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant&family=Lustria&display=swap');
+
+.home-img{
+    position: absolute;
+    bottom:30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 310px;
+    height: 410px;
+    object-fit: cover;
+    transform: rotate(-3deg);
+    box-shadow: 3px 3px 16px rgba(0,0,0,0.4);
+}
+.home-container{
+    background: rgb(18,62,115);
+    background: radial-gradient(circle, rgba(18,62,115,1) 0%, rgba(0,26,87,1) 42%, rgba(4,15,82,1) 82%, rgba(5,14,68,1) 100%, rgba(18,62,115,1) 100%);
+}
+.home-row{
+    padding: 0px 190px!important;
+}
+.home-row h1{
+    margin-top: 130px;
+    font-family: 'Lustria', serif;
+    color: #fff;
+    font-size: 68px;
+    z-index: 3;
+    font-weight: 100;
+}
+.home-div{
+    position: absolute;
+    bottom:30px;
+    transform: rotate(1deg);
+    box-shadow: 3px 3px 16px rgba(0,0,0,0.4);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 310px;
+    height: 410px;
+    background: rgb(168,43,93);
+    background: linear-gradient(233deg, rgba(168,43,93,1) 0%, rgba(209,55,117,1) 58%, rgba(118,16,57,1) 100%);
+    }
+.arrow-home{
+    color: rgb(236, 234, 234);
+    position: absolute;
+    bottom: 35px;
+    right: 45px;
+    font-size: 60px;
+    -webkit-filter: drop-shadow(2px 2px 12px#77726de5);
+}
+
+.socialIconWrapper{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.socialIconContainer{
+    background-color: white;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialIcon{
+    font-size: 20px;
+    
+}
