@@ -13,13 +13,13 @@ export default class Portfolio extends Component {
     render() {
         let workToPass=  {
             title: 'AMAZON REDESIGN',
-            description: 'Lorem ipsum dolor sit amet, consectetur adip non pro id el Lorem ipsum dolor sit amet, consectetur adip non pro id el Lorem ipsum dolor sit amet, consectetur adip non pro id el ',
+            description: 'Amazon redesign: the frontend is made in React while for building the backend I used Node and Mongodb.',
             picture1: Cattura,
             picture2: Cattura1
         }
         let workToPass1=  {
             title: 'SPOTIFY CLONE',
-            description: 'Lorem ipsum dolor sit amet, consectetur adip non pro id el Lorem ipsum dolor sit amet, consectetur adip non pro id el Lorem ipsum dolor sit amet, consectetur adip non pro id el ',
+            description: 'This spotify clone is one of my first React project, built to start using Redux and fetching data from my backend, again built using Node and Mongodb.',
             picture1: Spotify,
             picture2: Spotify1
         }
@@ -35,8 +35,7 @@ export default class Portfolio extends Component {
                     </Col>
 
                     </Row>
-                </Container>
-                
+                </Container>             
                         <Works work={workToPass}/>
                         <Works work={workToPass1}/>
             </div>
