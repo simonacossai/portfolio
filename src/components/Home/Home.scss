@@ -8,7 +8,7 @@
     background: rgb(18,62,115);
     background: radial-gradient(circle, rgba(18,62,115,1) 0%, rgba(0,26,87,1) 42%, rgba(4,15,82,1) 82%, rgba(5,14,68,1) 100%, rgba(18,62,115,1) 100%);
     .home-row{
-        padding: 0px 190px!important;
+        padding: 0px 180px!important;
     .home-img{
         position: absolute;
         bottom:30px;
@@ -49,14 +49,14 @@
         bottom: 35px;
         right: 45px;
         font-size: 60px;
-        -webkit-filter: drop-shadow(2px 2px 12px#77726de5);
+        filter: drop-shadow(2px 2px 12px #77726de5);
+        -webkit-filter: drop-shadow(2px 2px 12px #77726de5);
     }
     
     .socialIconWrapper{
         position: absolute;
         bottom: 40px;
         left: 40px;
-
         .socialIconContainer{
             background-color: $lightColor;
             border-radius: 100%;

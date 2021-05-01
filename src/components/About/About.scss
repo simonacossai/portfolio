@@ -1,44 +1,50 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .about-container{
 	padding:40px;
-	background:#fff;
-}
-.about-img{
-    height: 550px;
-    width: 550px;
-}
-.about-text{
+	background:$lightColor;
+	.about-img{
+		height: 550px;
+    	width: 550px;
+	}
+	.about-text{
 	padding: 20px 20px;
 	width: fit-content;
+	.quote-img{
+		width:60px;
+	    height:50px;
+	}
 }
 button {
 	background: none;
-	border: 2px solid #0B30A2;
-	font: inherit;
+	border: 2px solid $lighterBlue;
 	line-height: 1;
 	padding: 0.7em 0.8em;
-	color: #0B30A2;
+	color: $lighterBlue;
 	font-weight: 500;
 	width: 120px;
 	transition:ease-in-out .30s;
-  }
-.raise:hover,
-.raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.3em #0B30A2;
-  transform: translateY(-0.25em);
-  transition:ease-in-out .30s;
-
-}
-
-
-@media(max-width:768px){
-	.about-img{
-		height: 350px;
-		width: 350px;
+	&:hover,
+	&:focus {
+		box-shadow: 0 0.5em 0.5em -0.3em $lighterBlue;
+		transform: translateY(-0.25em);
+		  transition:ease-in-out .30s;
 	}
+  }
 }
-@media(max-width:400px){
+
+@include mobile{
 	.about-img{
-		height: 250px;
-		width: 250px;
+		height: 350px!important;
+		width: 350px!important;
+	}
+	.about-text{
+		padding: 10px 10px;
+		width: fit-content;
+		.quote-img{
+			width:50px;
+			height:40px;
+		}
 	}
 }
