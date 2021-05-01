@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import {Container, Row} from 'react-bootstrap';
 import homer from '../../assets/homered.png';
 import {IoIosArrowDropdownCircle} from 'react-icons/io'
-import './Home.css';
+import './Home.scss';
 import {RiLinkedinFill} from 'react-icons/ri';
 import {FaGithubAlt, FaFacebookF} from 'react-icons/fa';
 
 export default class Home extends Component {
     render() {
         return ( 
-            <Container fluid style={{height:"100vh"}} className="home-container">
+            <Container fluid className="home-container">
                 <Row className="d-flex justify-content-center align-items-center text-center home-row">
                   <h1 className="px-5 mx-5 animate__animated animate__fadeInDown">HI, I'M SIMONA.
                   <br/>
@@ -27,4 +27,3 @@ export default class Home extends Component {
         )
     }
 }
-//animate__slideInLeft

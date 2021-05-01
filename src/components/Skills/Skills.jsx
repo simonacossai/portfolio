@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Skills.css';
+import './Skills.scss';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import {AiFillHtml5} from 'react-icons/ai';
 import {DiCss3, DiJavascript} from 'react-icons/di';
