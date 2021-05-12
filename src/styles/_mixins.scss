@@ -3,3 +3,7 @@
 @mixin mobile {
     @media (max-width: $smallScreens){@content;}
 }
+
+@mixin tablet {
+    @media (max-width: $mediumScreens){@content;}
+}

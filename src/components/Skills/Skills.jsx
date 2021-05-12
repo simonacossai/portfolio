@@ -89,7 +89,7 @@ export default function Skills() {
 
     return (
         <>
-            <Container className="my-5">
+            <Container className="my-5" id="skills">
                 {skills.length>0 && <h1 className="text-center text-white">Technologies <GiSkills className="mb-2"/></h1>}
                 <Slider {...settings}>
                 {skills.map((e)=>{

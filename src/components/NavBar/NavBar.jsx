@@ -1,32 +1,54 @@
-import React, { Component } from 'react'
-import { Navbar, Nav } from 'react-bootstrap';
-import './NavBar.css';
-import { BsPersonLinesFill } from 'react-icons/bs';
-import { IoShareSocialSharp } from 'react-icons/io5';
-import { FaLaptopCode } from 'react-icons/fa';
-import { MdWork } from 'react-icons/md';
+import React, {useState} from 'react';
+import {Link} from 'react-scroll';
 import logo from '../../assets/logo.png';
-import {Link} from "react-router-dom"
+import {FaBars, FaTimes} from 'react-icons/fa'; 
+import './NavBar.scss';
 
-export default class NavBar extends Component {
-    render() {
-        return (
-            <div className="d-flex ">
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="portfolioNavbar mt-1 px-4">
-                    <Navbar.Brand ><img src={logo} className="navbar-logo"/></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav d-flex ml-auto ">
-                        <Nav className="ml-auto nav-link ">
-                            <Nav.Link >About</Nav.Link>
-                            <Nav.Link href="#pricing">Skills</Nav.Link>
-                            <Nav.Link href="#deets">Portfolio</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                            Contacts
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
-            </div>
-        )
+function Navbar() {
+    
+    const [click, setClick] = useState(false)
+    const handleClick =()=> setClick(!click)
+    const [button, setButton] = useState(true)
+    const closeMobileMenu = () =>setClick(false)
+
+    const showButton = () => {
+        if(window.innerWidth <= 960){
+            setButton(false)
+        }else{
+            setButton(true)
+        }
     }
+    window.addEventListener('resize', showButton);
+    
+    return (
+        <div className="bar-container">
+          <div className="navbar" id="navbar">
+              <div className="navbar-container container">           
+              <img src={logo} className="navbar-logo"/>
+                  <div className="menu-icon" onClick={handleClick}>
+                      {click ? <FaTimes /> : <FaBars />}
+                  </div>
+                  <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                  <li className="nav-item">
+                          <Link  smooth={true} duration={900} to="about" className="nav-links " onClick={closeMobileMenu}>
+                            About
+                          </Link>
+                      </li>
+                      <li className="nav-item">
+                          <Link  smooth={true} duration={900} to="skills" className="nav-links mx-lg-4" onClick={closeMobileMenu}>
+                            Technologies
+                          </Link>
+                      </li>
+                      <li className="nav-item">
+                          <Link to="portfolio" smooth={true} duration={900} className="nav-links" onClick={closeMobileMenu}>
+                            Portfolio
+                          </Link>
+                      </li>
+                  </ul>
+              </div>
+          </div>  
+        </div>
+    )
 }
+
+export default Navbar

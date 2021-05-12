@@ -1,0 +1,80 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.pc-work{
+    width:350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.portfolio-col{
+    position: relative;
+}
+
+html{
+    background-color: #040E4A!important;
+}
+
+.App{
+    background-color: #040E4A!important;
+}
+
+.portfolio-container{
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.6);
+    position: relative;
+    border-left: 8px solid #B32F64;
+    background-color: #fff;
+    border-radius: 16px;
+    h2{
+        font-size: 30px;
+    }
+}
+
+.geometric-line{
+    background-color: #fff;
+    height:2px;
+    width:230px;
+}
+.Portfolio{
+    background-color: #040E4A;
+    margin-top:150px;
+    padding: 30px 0;
+}
+.Works{
+    margin-top:100px!important;
+}
+.work-img{
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+}
+@include mobile{
+	.portfolio-container{
+      display:none;
+    }
+    .Works{
+        margin-top:20px!important;
+    }
+    .Portfolio{
+        background-color: #040E4A;
+        margin-top:0px;
+        padding: 0px 0;
+    }
+    .work-img{
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+    }
+    .right-work-img{
+        margin-top: 30px;
+    }
+}
+
+@include tablet{
+    .portfolio-container{
+        h2{
+            font-size: 20px;
+        }
+    }
+}
