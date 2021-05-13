@@ -6,9 +6,7 @@ import Works from './Works';
 import {workToPass} from '../../data/works';
 
 export default class Portfolio extends Component {
-  
     render() {
-
         return (
             <div className="Portfolio" id="portfolio">
                 <Container className="portfolio-container mb-5 px-5">
@@ -23,6 +21,5 @@ export default class Portfolio extends Component {
                 </Container>  
                 {workToPass.map((e,index)=> <Works work={e} key={index}/>)}           
             </div>
-        )
-    }
+    )}
 }

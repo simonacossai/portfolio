@@ -22,9 +22,9 @@ export default class Home extends Component {
                 <IoIosArrowDropdownCircle className="arrow-home ml-auto animate__animated animate__pulse animate__infinite"/>
                 </Link>
                 <div className="socialIconWrapper d-flex">
-                    <div className="animate__animated animate__fadeInLeft animate__delay-500ms animate__faster socialIconContainer p-2"><RiLinkedinFill className="socialIcon"/></div>
-                    <div className="animate__animated animate__fadeInLeft animate__delay-1s animate__faster socialIconContainer p-2 mx-3"><FaGithubAlt className="socialIcon"/></div>
-                    <div className="animate__animated animate__fadeInLeft animate__delay-2s animate__faster socialIconContainer p-2"><FaFacebookF className="socialIcon"/></div>
+                    <a href="https://www.linkedin.com/in/simonacossai/" className="text-dark" target="_blank"><div className="animate__animated animate__fadeInLeft animate__delay-500ms animate__faster socialIconContainer p-2"><RiLinkedinFill className="socialIcon"/></div></a>
+                    <a href="https://github.com/simonacossai" className="text-dark" target="_blank"><div className="animate__animated animate__fadeInLeft animate__delay-1s animate__faster socialIconContainer p-2 mx-3"><FaGithubAlt className="socialIcon"/></div></a>
+                    <a href="https://www.facebook.com/simona.cossai.39/" className="text-dark" target="_blank"><div className="animate__animated animate__fadeInLeft animate__delay-2s animate__faster socialIconContainer p-2"><FaFacebookF className="socialIcon"/></div></a>
                 </div>
             </Container>
         )
