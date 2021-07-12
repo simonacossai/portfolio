@@ -10,18 +10,21 @@ export const workToPass= [
     title: 'PINTEREST REDESIGN',
     description: 'Pinterest redesign is built using React+Redux and Scss, all the data is fetched and created thanks to the backend in Node+Express and Mongodb as Database.',
     picture1: pinterest,
-    picture2: pinterest1
+    picture2: pinterest1,
+    link: 'https://github.com/simonacossai/capstone-fe',
     },
     {
     title: 'AMAZON REDESIGN',
     description: 'Amazon redesign: the frontend is made in React while for building the backend I used Node and Mongodb.',
     picture1: Cattura,
-    picture2: Cattura1
+    picture2: Cattura1,
+    link: 'https://github.com/simonacossai/ShopOnline-AmazonRedesign'
     },
     {
     title: 'SPOTIFY CLONE',
     description: 'This spotify clone is one of my first React project, built to start using Redux and fetching data from my backend, again built using Node and Mongodb.',
     picture1: Spotify,
-    picture2: Spotify1
+    picture2: Spotify1,
+    link: 'https://github.com/simonacossai/SpotifyClone-React-fe'
     }
 ]

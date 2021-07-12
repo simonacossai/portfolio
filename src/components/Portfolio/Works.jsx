@@ -10,10 +10,10 @@ export default class Works extends Component {
                 <Row className="justify-content-center d-flex">
                 <Col md={6}>
                 <h1 className="text-white mt-3">{this.props.work.title}</h1>
-                <img src={this.props.work.picture1} className="work-img" />
+                <a href={this.props.work.link} target="_blank"><img src={this.props.work.picture1} className="work-img" /></a>
                 </Col>
                 <Col md={6} >
-                    <img src={this.props.work.picture2} className="work-img right-work-img"/>
+                <a href={this.props.work.link} target="_blank"> <img src={this.props.work.picture2} className="work-img right-work-img"/></a>
                     <p className="text-white text-left">{this.props.work.description}
                     </p>
                 </Col>
