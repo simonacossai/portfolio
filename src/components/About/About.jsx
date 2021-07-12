@@ -31,7 +31,7 @@ export default function About() {
                 <p>I started thanks to online courses and bootcamps, where I first got in touch with the MERN stack and the other technologies I'm currently working with. </p>
                 <p>If you're curious scroll and go take a look at my most recent projects -and why not- reach me out on Linkedin if you have any questions and let's have a chat! </p>
                 
-                <button class="raise my-3">Get my CV</button>
+                <a href="https://www.linkedin.com/in/simonacossai/" target="_blank"><button class="raise my-3">Linkedin</button></a>
             </div>
             </Col>
         </Row>
